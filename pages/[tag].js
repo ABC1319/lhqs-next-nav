@@ -16,7 +16,7 @@ export default function Tag({data, tag, tagList}) {
                     <div id="list" className="flex flex-wrap">
                         {data.map((item, index) => (
                             <div key={index} className="my-1">
-                                <a className="mr-2 px-2 py-1 rounded-md text-sm cursor-pointer bg-gray-200 hover:bg-gray-300" href={item.url} target="_blank" rel="noreferrer">
+                                <a className="mr-2 px-2 py-1 rounded-md text-sm cursor-pointer bg-gray-200 hover:bg-gray-300" href={item.url} target="_blank" rel="noopener noreferrer">
                                     {item.title}
                                 </a>
                             </div>
