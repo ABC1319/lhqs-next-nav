@@ -37,7 +37,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params}) {
     const tags = params.tags;
-    console.log('data', tags);
+    console.log('data ---> ', tags, params);
     const data = {"tags": tags, "title": "乱红如雨", url: "https://lhqs.vercel.app/"};
     return {
         props: {

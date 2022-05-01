@@ -1,6 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+这是基于 [lhqs-site-nav](https://github.com/lhqs/lhqs-site-nav) 项目,通过使用Next.js进行重新实现
 
-## Getting Started
+
+## 乱红如雨的个人站点: 标签导航 + 聚合搜索
+
+访问: http://info.lhqs.ink/
+
+介绍: 一个个人访问站点的日常收集(现已收集一千多个精选网址, 还在持续更新中), 也是网上获取信息的一个起点
+
+### 功能
+
+1. 基于tag的站点导航, 为解决bookmark分类查找不便等问题
+```
+    {
+        "tags": "高频访问 site tech github",
+        "title": "Github trending",
+        "url": "https://github.com/trending"
+    }...
+```
+
+2. 聚合搜索, 聚合搜索渠道, 方便信息获取
+```
+    {
+        "title": "Google",
+        "url": "https://www.google.com/search?q=${query}"
+    },
+    {
+        "title": "必应",
+        "url": "http://bing.com/search?q=${query}"
+    }...
+```
+### 使用
 
 First, run the development server:
 
@@ -10,25 +39,6 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:4000](http://localhost:4000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

@@ -1,9 +1,10 @@
 import Layout from '../../components/Layout';
 import {loadDataList} from '../api/data';
-export default function Tag({data}) {
+
+export default function Tag({data, tagList}) {
     return (
-        <Layout>
-            <div className="text-center text-lg">tag</div>
+        <Layout data={tagList}>
+            {/* <div className="text-center text-lg">tag</div> */}
             {/* <Link href="/detail/[id]" as={`/detail/${xx.id}`}><a>chick on</a></Link> */}
             <div>
                 {data.map(item => (
@@ -60,6 +61,7 @@ export async function getStaticProps({params}) {
 
     return {
         props: {
+            tagList: '',
             data: filterData
         }
     }
