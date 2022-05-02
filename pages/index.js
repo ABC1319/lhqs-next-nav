@@ -3,7 +3,7 @@ import TagList from '../components/TagList';
 
 
 import styles from '../styles/Home.module.css'
-import {loadAllDataList, loadDataList} from './api/data';
+import {loadDataList} from './api/data';
 
 export default function Home({tagList, data}) {
   return (

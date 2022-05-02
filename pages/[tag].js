@@ -3,7 +3,6 @@ import TagList from '../components/TagList';
 import {loadDataList} from './api/data';
 
 export default function Tag({data, tag, tagList}) {
-    // console.log('tag----> ', tagList);
     return (
         <Layout>
             <TagList data={tagList} />
@@ -37,7 +36,6 @@ export async function getStaticPaths() {
         data[key].tags.split(/\s+/).forEach(element => tagsSet.add(element));
     }
     let paths = Array.from(tagsSet).map(tag => ({params: {tag}}))
-    // console.log('paths: ', paths);
     return {
         paths,
         fallback: false
@@ -46,7 +44,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params}) {
     const tag = params.tag;
-    // console.log('tags', tag);
     const siteData = await loadDataList();
 
     let tagsSet = new Set();
