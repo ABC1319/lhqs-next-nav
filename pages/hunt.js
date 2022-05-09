@@ -22,7 +22,7 @@ export default function SearchPage({data}) {
     return (<Layout>
                 <section>
                     <div className="pt-4 flex justify-center">
-                        <div className="flex w-4/5 md:3/4 xl:w-1/2 ">
+                        <div className="flex w-full mx-1 md:3/4 xl:w-1/2 ">
                             <div id="sform" className="w-full pt-2 relative mx-auto text-gray-600">
                                 <input id="search" value={searchInput} onChange={onChange}  className="w-full border-2 border-gray-300 bg-white h-10 px-3 pr-16 rounded-lg text-sm focus:outline-none" type="search" name="search" placeholder="Search by keywords" />
                                 <button  id="engine" onClick={event => defaultSearch(event)} className="absolute right-0 top-0 mt-4 mr-4 border-gray-300 bg-white">
@@ -34,7 +34,7 @@ export default function SearchPage({data}) {
                 </section>
 
                 <section  className="flex justify-center">
-                    <div className="w-4/5 md:3/4 xl:w-1/2 mb-6">
+                    <div className="w-full mx-1 md:3/4 xl:w-1/2 mb-6">
                         {
                             data && data.map((item, index) => (
                                 <div key={index}>

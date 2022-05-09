@@ -11,12 +11,12 @@ export default function Home({tagList, data}) {
         <Layout >
           <TagList data={tagList} />
 
-          <div className="w-4/5 md:3/4 xl:w-1/2  mx-auto h-4 border-b-2 border-gray-300 text-center mt-4 mb-6">
+          <div className="w-full md:3/4 xl:w-1/2  mx-auto h-4 border-b-2 border-gray-300 text-center mt-4 mb-6">
               <span id="tagActive" className="bg-white px-2 py-1 mt-1 text-lg">#高频访问</span>
           </div>
 
           <div className="flex justify-center">
-            <div className="w-4/5 md:3/4 xl:w-1/2 mb-6">
+            <div className="w-full md:3/4 xl:w-1/2 mb-6 mx-1">
                 <div id="list" className="flex flex-wrap">
                   {data.map((item, index) => (
                       <div key={index} className="my-1">

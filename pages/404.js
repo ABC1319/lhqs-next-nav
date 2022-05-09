@@ -13,7 +13,5 @@ export default function CustomNotFound() {
                     </div>
                 </div>
             </div>
-
-
     </Layout>
 }
